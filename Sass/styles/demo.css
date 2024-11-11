@@ -1,0 +1,84 @@
+@import url(../utilitys/reset.css);
+/* Sass Variable create  */
+/* @mixin style create  */
+header {
+  background: #ffab73;
+}
+
+main {
+  background: #ffd384;
+}
+
+footer {
+  background: #ffaec0;
+}
+
+#service {
+  width: 600px;
+  margin: 10px auto;
+}
+
+section p {
+  font-size: 30px;
+}
+
+#danger {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0px;
+  background-color: orange;
+}
+
+#transformBox {
+  border: 5px solid red;
+  background-color: orange;
+  width: 500px;
+  height: auto;
+}
+
+.mixinPera {
+  border: brown solid 5px;
+}
+
+.btnBasic, .nextBtn, .btnDesign {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.nextBtn {
+  background-color: orange;
+  color: white;
+}
+
+nav {
+  margin: 0 auto;
+  width: 100%;
+  background: #ffaec0;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.4s;
+  color: gray;
+  font-weight: bold;
+}
+nav ul li a:hover {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=demo.css.map */

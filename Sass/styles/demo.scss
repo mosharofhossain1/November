@@ -1,0 +1,110 @@
+@import url(../utilitys/reset.css);
+
+
+/* Sass Variable create  */
+$header-bg: #ffab73;
+$main-bg:#ffd384;
+$footer-bg:#ffaec0;
+
+// fontSize variable create 
+$fontSize:30px;
+
+/* @mixin style create  */
+@mixin important_text{
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+
+@mixin border($color,$width){
+    border: $width solid $color;
+}
+
+// @mixin transform($property){
+//     transform: $property;
+// }
+// main css styles 
+header{
+    background: $header-bg;
+}
+main{
+    background: $main-bg;
+}
+footer{
+    background: $footer-bg;
+}
+#service{
+    width: 600px;
+    margin: 10px auto;
+}
+section p{
+    font-size: $fontSize;
+}
+#danger{
+    @include important_text;
+    background-color: orange;
+}
+#transformBox{
+    border: 5px solid red;
+    background-color: orange;
+    width: 500px;
+    height: auto;
+}
+.mixinPera{
+    @include border(5px, brown)
+}
+
+// .myBox{
+//     @include transform(rotate(20deg));
+
+// }
+.btnBasic{
+    border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.btnDesign{
+    @extend .btnBasic;
+}
+.nextBtn{
+    @extend .btnBasic;
+    background-color: orange;
+    color: white;
+}
+// nested sass technic 
+nav{
+    margin: 0 auto;
+    width: 100%;
+    background:$footer-bg;
+    ul{
+        list-style-type: none;
+        li {
+            display: inline-block;
+            margin-left: 20px;
+            a{
+                display: inline-block;
+                
+                text-decoration: none;
+                padding: 10px;
+                border-radius: 5px;
+                transition: .4s;
+                color: gray;
+                font-weight: bold;
+            }
+            a:hover{
+                background-color: black;
+                color: white;
+            }
+            
+        }
+    }
+}
+
+
+ 
